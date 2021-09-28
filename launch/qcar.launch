@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="robot_description" command="xacro '$(find qcar_localization)/urdf/qcar_model.xacro'"/>
+
+    <!-- send fake joint values -->
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    </node>
+
+    <!-- Combine joint values -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+
+    <node name="qcar_node" pkg="qcar_example" type="qcarnode.py" output="screen"/>
+
+    <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+</launch>

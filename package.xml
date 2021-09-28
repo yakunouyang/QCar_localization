@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>qcar_localization</name>
+    <version>0.0.1</version>
+    <description>The qcar localization package</description>
+    <author email="libai@hnu.edu.cn">Bai Li</author>
+    <maintainer email="yakun@hnu.edu.cn">Yakun Ouyang</maintainer>
+    <license>MIT</license>
+    <buildtool_depend>catkin</buildtool_depend>
+    <exec_depend>robot_state_publisher</exec_depend>
+    <exec_depend>xacro</exec_depend>
+    <exec_depend>joint_state_publisher</exec_depend>
+    <exec_depend>qcar_example</exec_depend>
+    <exec_depend>rplidar_ros</exec_depend>
+    <exec_depend>rf2o_laser_odometry</exec_depend>
+    <exec_depend>robot_localization</exec_depend>
+    <exec_depend>gmapping</exec_depend>
+    <exec_depend>map_server</exec_depend>
+    <exec_depend>amcl</exec_depend>
+</package>
